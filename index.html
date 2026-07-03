@@ -1,124 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Fast Money Gaming</title>
 
 <style>
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0b1220;
+  color: white;
 }
 
-body{
-background:linear-gradient(135deg,#0f172a,#1e293b);
-color:white;
-text-align:center;
+/* HEADER */
+header {
+  text-align: center;
+  padding: 30px 20px;
+  background: linear-gradient(135deg, #0ea5e9, #1e3a8a);
 }
 
-.hero{
-padding:70px 20px;
+header img {
+  width: 110px;
+  border-radius: 16px;
+  margin-bottom: 10px;
 }
 
-.hero h1{
-font-size:42px;
-color:#FFD700;
+header h1 {
+  margin: 0;
+  font-size: 28px;
+  letter-spacing: 1px;
 }
 
-.hero p{
-margin-top:10px;
-font-size:18px;
-color:#ddd;
+header p {
+  opacity: 0.9;
+  margin-top: 5px;
 }
 
-.games{
-margin-top:30px;
-font-size:22px;
-font-weight:bold;
-line-height:1.8;
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 50px 20px;
 }
 
-.btn{
-display:inline-block;
-margin:12px;
-padding:15px 28px;
-border-radius:10px;
-text-decoration:none;
-color:white;
-font-size:18px;
-font-weight:bold;
+.hero h2 {
+  font-size: 26px;
+  margin-bottom: 10px;
 }
 
-.facebook{
-background:#1877F2;
+.hero span {
+  color: #22c55e;
+  font-weight: bold;
 }
 
-.telegram{
-background:#0088cc;
+.hero p {
+  opacity: 0.8;
 }
 
-.contact{
-margin-top:40px;
-font-size:18px;
+/* BUTTON */
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 22px;
+  background: #22c55e;
+  color: black;
+  font-weight: bold;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: 0.3s;
 }
 
-.footer{
-margin-top:60px;
-padding:20px;
-background:#111827;
-color:#bbb;
+.btn:hover {
+  background: #16a34a;
+  transform: scale(1.05);
+}
+
+/* SECTIONS */
+.section {
+  padding: 20px;
+}
+
+.card {
+  background: #111b2e;
+  padding: 18px;
+  margin: 10px 0;
+  border-radius: 12px;
+  border: 1px solid #1f2a44;
+}
+
+.card h3 {
+  margin: 0 0 8px;
+  color: #38bdf8;
+}
+
+/* FEATURES GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 13px;
+  opacity: 0.7;
+  background: #050914;
+  margin-top: 20px;
+}
+
+/* FLOAT BUTTON */
+.fixed-btn {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  background: #22c55e;
+  color: black;
+  padding: 14px 16px;
+  border-radius: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 0 15px rgba(34,197,94,0.5);
 }
 </style>
 </head>
 
 <body>
 
-<div class="hero">
+<header>
+  <img src="logo.png" alt="Logo">
+  <h1>FAST MONEY GAMING</h1>
+  <p>Trusted • Fast Payout • 24/7 Support</p>
+</header>
 
-<h1>🎰 Fast Money Gaming 🎰</h1>
+<section class="hero">
+  <h2>🔥 Get <span>100% Signup Bonus</span></h2>
+  <p>Join now and start playing instantly</p>
+  <a class="btn" href="#">🚀 Join Now</a>
+</section>
 
-<p>Trusted Online Gaming Community</p>
+<section class="section">
+  <div class="grid">
 
-<div class="games">
-🔥 Juwa<br>
-🔥 Orion Stars<br>
-🔥 Fire Kirin<br>
-🔥 Game Vault<br>
-🔥 Milky Way<br>
-🔥 Vblink
-</div>
+    <div class="card">
+      <h3>🎁 Welcome Bonus</h3>
+      <p>New players get instant rewards on signup.</p>
+    </div>
 
-<br>
+    <div class="card">
+      <h3>⚡ Fast Withdrawal</h3>
+      <p>Quick payout processing without delay.</p>
+    </div>
 
-<a class="btn facebook"
-href="https://www.facebook.com/share/1buJvfuCtU/"
-target="_blank">
-📘 Follow us on Facebook
-</a>
+    <div class="card">
+      <h3>🎮 Top Games</h3>
+      <p>Juwa • Firekirin • Orionstars • GameVault</p>
+    </div>
 
-<a class="btn telegram"
-href="https://t.me/JennySlotRoom"
-target="_blank">
-🚀 Join Our Telegram
-</a>
+    <div class="card">
+      <h3>🔒 Secure Platform</h3>
+      <p>Safe and trusted gaming experience.</p>
+    </div>
 
-<div class="contact">
-<h2>Why Choose Us?</h2>
+  </div>
+</section>
 
-<p>✅ Fast Payouts</p>
-<p>✅ Friendly Support</p>
-<p>✅ Trusted Service</p>
-<p>✅ New Player Promotions</p>
-</div>
+<section class="section">
+  <div class="card">
+    <h3>📢 Limited Offer</h3>
+    <p>100% bonus available for a short time only. Join before it ends!</p>
+  </div>
+</section>
 
-</div>
+<a class="fixed-btn" href="#">JOIN</a>
 
-<div class="footer">
-© 2026 Fast Money Gaming
-</div>
+<footer>
+  © 2026 Fast Money Gaming. All Rights Reserved.
+</footer>
 
 </body>
 </html>
