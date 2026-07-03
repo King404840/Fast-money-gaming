@@ -11,41 +11,47 @@ body {
   font-family: Arial, sans-serif;
   background: #0b1220;
   color: white;
+  padding-top: 110px;
 }
 
-/* HEADER */
+/* STICKY HEADER */
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
   text-align: center;
-  padding: 30px 20px;
+  padding: 15px 10px;
   background: linear-gradient(135deg, #0ea5e9, #1e3a8a);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
 }
 
 header img {
-  width: 110px;
-  border-radius: 16px;
-  margin-bottom: 10px;
+  width: 85px;
+  border-radius: 15px;
+  margin-bottom: 5px;
 }
 
 header h1 {
   margin: 0;
-  font-size: 28px;
-  letter-spacing: 1px;
+  font-size: 22px;
 }
 
 header p {
+  margin: 5px 0 0;
+  font-size: 13px;
   opacity: 0.9;
-  margin-top: 5px;
 }
 
 /* HERO */
 .hero {
   text-align: center;
-  padding: 50px 20px;
+  padding: 30px 20px;
 }
 
 .hero h2 {
-  font-size: 26px;
-  margin-bottom: 10px;
+  font-size: 24px;
 }
 
 .hero span {
@@ -53,37 +59,29 @@ header p {
   font-weight: bold;
 }
 
-.hero p {
-  opacity: 0.8;
-}
-
 /* BUTTON */
 .btn {
   display: inline-block;
-  margin-top: 20px;
+  margin-top: 15px;
   padding: 14px 22px;
   background: #22c55e;
   color: black;
   font-weight: bold;
   border-radius: 10px;
   text-decoration: none;
-  transition: 0.3s;
 }
 
-.btn:hover {
-  background: #16a34a;
-  transform: scale(1.05);
-}
-
-/* SECTIONS */
-.section {
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
   padding: 20px;
 }
 
 .card {
   background: #111b2e;
   padding: 18px;
-  margin: 10px 0;
   border-radius: 12px;
   border: 1px solid #1f2a44;
 }
@@ -91,23 +89,6 @@ header p {
 .card h3 {
   margin: 0 0 8px;
   color: #38bdf8;
-}
-
-/* FEATURES GRID */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 12px;
-}
-
-/* FOOTER */
-footer {
-  text-align: center;
-  padding: 20px;
-  font-size: 13px;
-  opacity: 0.7;
-  background: #050914;
-  margin-top: 20px;
 }
 
 /* FLOAT BUTTON */
@@ -123,13 +104,21 @@ footer {
   text-decoration: none;
   box-shadow: 0 0 15px rgba(34,197,94,0.5);
 }
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 12px;
+  opacity: 0.7;
+}
 </style>
 </head>
 
 <body>
 
 <header>
-  <img src="logo.png" alt="Logo">
+  <img src="https://i.imgur.com/xxxxxx.png" alt="Logo">
   <h1>FAST MONEY GAMING</h1>
   <p>Trusted • Fast Payout • 24/7 Support</p>
 </header>
@@ -140,37 +129,28 @@ footer {
   <a class="btn" href="#">🚀 Join Now</a>
 </section>
 
-<section class="section">
-  <div class="grid">
+<section class="grid">
 
-    <div class="card">
-      <h3>🎁 Welcome Bonus</h3>
-      <p>New players get instant rewards on signup.</p>
-    </div>
-
-    <div class="card">
-      <h3>⚡ Fast Withdrawal</h3>
-      <p>Quick payout processing without delay.</p>
-    </div>
-
-    <div class="card">
-      <h3>🎮 Top Games</h3>
-      <p>Juwa • Firekirin • Orionstars • GameVault</p>
-    </div>
-
-    <div class="card">
-      <h3>🔒 Secure Platform</h3>
-      <p>Safe and trusted gaming experience.</p>
-    </div>
-
-  </div>
-</section>
-
-<section class="section">
   <div class="card">
-    <h3>📢 Limited Offer</h3>
-    <p>100% bonus available for a short time only. Join before it ends!</p>
+    <h3>🎁 Bonus</h3>
+    <p>Instant rewards for new players.</p>
   </div>
+
+  <div class="card">
+    <h3>⚡ Fast Withdraw</h3>
+    <p>Quick and secure payouts.</p>
+  </div>
+
+  <div class="card">
+    <h3>🎮 Games</h3>
+    <p>Juwa • Firekirin • OrionStars • GameVault</p>
+  </div>
+
+  <div class="card">
+    <h3>🔒 Safe</h3>
+    <p>Trusted and secure platform.</p>
+  </div>
+
 </section>
 
 <a class="fixed-btn" href="#">JOIN</a>
